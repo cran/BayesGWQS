@@ -1,0 +1,25 @@
+#' Simulated data of chemical concentrations and one binary outcome variable
+#'
+#' Data were simulated to have 0.7 in-group correlation and 0.3 between-group correlation. There are three groups,
+#' with the third being significantly correlated to the outcome variable.
+#'
+#'
+#' @format A data frame with 1000 rows and 15 variables:
+#' \describe{
+#' \item{pcb_118}{a numeric vector; part of group 1}
+#' \item{pcb_138}{a numeric vector; part of group 1}
+#' \item{pcb_153}{a numeric vector; part of group 1}
+#' \item{pcb_180}{a numeric vector; part of group 1}
+#' \item{pcb_192}{a numeric vector; part of group 1}
+#' \item{as}{a numeric vector; part of group 2}
+#' \item{cu}{a numeric vector; part of group 2}
+#' \item{pb}{a numeric vector; part of group 2}
+#' \item{sn}{a numeric vector; part of group 2}
+#' \item{carbaryl}{a numeric vector; part of group 3}
+#' \item{propoxur}{a numeric vector; part of group 3}
+#' \item{methoxychlor}{a numeric vector; part of group 3}
+#' \item{diazinon}{a numeric vector; part of group 3}
+#' \item{chlorpyrifos}{a numeric vector; part of group 3}
+#' \item{Y}{a numeric vector; the outcome variable}
+#' }
+"simdata"

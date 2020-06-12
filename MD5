@@ -1,0 +1,15 @@
+9af7c7315da5a7fb462bb9d4d7426337 *DESCRIPTION
+4e44d217e5f480c55aabf0783845b963 *NAMESPACE
+acd3a1ac76ed33b4d7369e19865013fa *R/bgwqs.fit.R
+c53555726930b364ff5a81697111cd4a *R/data.R
+552afd6e1e58b311faaa5aa937046505 *R/make.X.R
+5422b5347dc3c96bddaf925466a36fbb *R/make.x.s.R
+3e16491f4d7756fd305c7565046d32e1 *R/model_gen.R
+bcfcf061c6bd55f5226709eb7b4b48ca *R/quantile.fn.R
+ee4f66a1caf5162483a6c82aa4313bda *data/simdata.rda
+9635586f1965ce21bacceb0036499d27 *man/bgwqs.fit.Rd
+e7e9b969b386cae90f9f180c3e0ad0ec *man/make.X.Rd
+2e53ca36d457cc5d345e9968c6e8ca20 *man/make.x.s.Rd
+cb74155b894ee9e901bb5353bf8d5a08 *man/simdata.Rd
+05496fc6a10e9123bf98407b8a029133 *tests/testthat.R
+ed976b8efc35195532efaa0e31ce2723 *tests/testthat/test_output.R
