@@ -20,6 +20,7 @@
 #' X
 #' @export
 make.X <- function(df, num.groups, groups){
+    if (any(class(df)=="spec_tbl_df")){df <- as.data.frame(df)}
  xrow <- dim(df)[1]
  x.s <- numeric()
    for (i in 1:num.groups){

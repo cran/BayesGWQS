@@ -7,13 +7,14 @@
 bgwqs.fit(
   y,
   x,
-  z = NULL,
   x.s,
   n.quantiles = 4,
   working.dir,
+  mcmc = "jags",
   n.iter = 10000,
   n.burnin = 5000,
   n.thin = 1,
+  n.adapt = 500,
   debug = FALSE
 )
 }
@@ -22,13 +23,13 @@ bgwqs.fit(
 
 \item{x}{A matrix of component data.}
 
-\item{z}{A vector or matrix of covariates.}
-
 \item{x.s}{A vector of the number of components in each index.}
 
 \item{n.quantiles}{The number of quantiles to apply to the component data.}
 
 \item{working.dir}{A file path to the directory.}
+
+\item{mcmc}{The MCMC program to be used for analysis. Currently "jags" and "openbugs" are supported arguments.}
 
 \item{n.iter}{The number of total iterations per chain, including burn in.}
 
@@ -36,10 +37,12 @@ bgwqs.fit(
 
 \item{n.thin}{The thinning rate, which must be a positive integer.}
 
-\item{debug}{False by default, when true OpenBUGS remains open for further investigation.}
+\item{n.adapt}{The number of adaption iterations, only required for JAGS analyses.}
+
+\item{debug}{Only for OpenBUGS analyses. False by default, when true OpenBUGS remains open for further investigation.}
 }
 \value{
-A list of 3 which includes the BUGS output, coda output, and convergence test results.
+A list which includes BUGS output, sample chains post-burnin, and convergence test results.
 }
 \description{
 This function fits a Bayesian grouped weighted quantile sum (BGWQS) regression model.
@@ -54,8 +57,8 @@ x.s <- make.x.s(simdata, 3, group_list)
 X <- make.X(simdata, 3, group_list)
 Y <- simdata$Y
 work_dir <- tempdir()
-results <- bgwqs.fit(y = Y, x = X, x.s = x.s, n.quantiles=4, working.dir = work_dir,
-                    n.iter = 10000, n.burnin = 5000, n.thin = 1)
+results <- bgwqs.fit(y = Y, x = X, x.s = x.s, n.quantiles=4, working.dir = work_dir, mcmc = "jags",
+                    n.iter = 10000, n.burnin = 5000, n.thin = 1, n.adapt = 500)
 }
 
 }

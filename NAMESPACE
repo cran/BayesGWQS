@@ -3,3 +3,4 @@
 export(bgwqs.fit)
 export(make.X)
 export(make.x.s)
+importFrom(stats,update)
