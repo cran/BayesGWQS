@@ -4,7 +4,8 @@
 \name{simdata}
 \alias{simdata}
 \title{Simulated data of chemical concentrations and one binary outcome variable}
-\format{A data frame with 1000 rows and 15 variables:
+\format{
+A data frame with 1000 rows and 15 variables:
 \describe{
 \item{pcb_118}{a numeric vector; part of group 1}
 \item{pcb_138}{a numeric vector; part of group 1}
@@ -21,7 +22,8 @@
 \item{diazinon}{a numeric vector; part of group 3}
 \item{chlorpyrifos}{a numeric vector; part of group 3}
 \item{Y}{a numeric vector; the outcome variable}
-}}
+}
+}
 \usage{
 simdata
 }

@@ -3,4 +3,5 @@
 export(bgwqs.fit)
 export(make.X)
 export(make.x.s)
+export(weight.plot)
 importFrom(stats,update)

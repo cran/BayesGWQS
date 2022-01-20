@@ -1,4 +1,5 @@
 quantile.fn <- function(data, n.quantiles){
+    data <- as.matrix(data)
     q <- matrix(0, dim(data)[1], dim(data)[2])
     I <- dim(data)[2]
     for(i in 1:I){
